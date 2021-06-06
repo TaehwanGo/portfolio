@@ -53,3 +53,17 @@
   - "editor.tokenColorCustomizations": {
     "comments": "#ffc2c2"
     }, 추가함 : 코멘트 색갈을 바꿈
+
+## 3. Head
+
+- UI적인 요소는 전혀 들어있지 않고 웹사이트 관련된 정보들이 있는 곳
+
+### Metadata
+
+- title 수정, description, author 추가
+
+### Font Awesome
+
+- CDN : copy & paste
+
+###
