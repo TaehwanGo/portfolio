@@ -97,4 +97,11 @@
 
 ### Navbar
 
--
+- logo, menu
+
+### Home
+
+- profile photo
+- title
+- description
+- Contact button
