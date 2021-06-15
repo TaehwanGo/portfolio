@@ -66,4 +66,35 @@
 
 - CDN : copy & paste
 
-###
+### Google Fonts
+
+- Head에 400, 600 weight 추가
+
+### Favicon
+
+- images 폴더 생성 후 favicon png파일 저장 후 Head에 icon 추가함
+
+### javascript defer
+
+- HTML을 parsing 하면서 js를 fetching 하는데 parsing HTML이후 executing js
+
+## 4. HTML : Markup
+
+### What is BEM ?
+
+- class 이름 정하는 규칙
+- Block Element Modifier 로 나누어서 이름을 작성하는 방식
+- ex) 카드
+  - 카드 : Block
+  - 카드안의 이미지, 타이틀 : Element
+  - .card\_\_img
+  - .button
+  - cards\_\_card 같이 할 필요 없음
+
+### Sectioning
+
+- 그림을 그리거나 PDF로 만든 것을 섹션을 나눔
+
+### Navbar
+
+-
