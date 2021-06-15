@@ -105,3 +105,9 @@
 - title
 - description
 - Contact button
+
+### About
+
+- Title, description, paragraph 는 About section 외 다른 곳에서도 공통적으로 쓸 수 있기 때문에 About class로 지정하지 않음
+- project 링크는 깃허브 주소
+- 깃허브 리드미 정리 필요
