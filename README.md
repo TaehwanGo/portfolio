@@ -111,3 +111,7 @@
 - Title, description, paragraph 는 About section 외 다른 곳에서도 공통적으로 쓸 수 있기 때문에 About class로 지정하지 않음
 - project 링크는 깃허브 주소
 - 깃허브 리드미 정리 필요
+
+### Skills
+
+- HTML Progress element가 있지만 브라우저마다 보여지는게 다르고 스타일링이 까다롭기 때문에 나만의 프로그레스 바를 만들음
