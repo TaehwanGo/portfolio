@@ -115,3 +115,11 @@
 ### Skills
 
 - HTML Progress element가 있지만 브라우저마다 보여지는게 다르고 스타일링이 까다롭기 때문에 나만의 프로그레스 바를 만들음
+
+### Work(projects)
+
+- All, Front-end, Back-end 등의 버튼을 만들고 클릭하면 필터링 되어 해당 프로젝트 표시
+- 각 프로젝트에 깃허브 링크를 걸어 놓음
+- Blank : 새탭으로 띄우기(default는 현재탭에서 뜸)
+- 이미지 사이즈 조정(later) : 이미지가 크면 다운로드 받는데 오래걸리기 때문
+  - png resize 또는 png compressor 검색
