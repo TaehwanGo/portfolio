@@ -273,3 +273,30 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 - font, color, active class 설정
 
 ### Home
+
+- button 태그 기본값 변경
+  - 투명, 포인터 커서, 테두리 없앰, 클릭 시 생기는 테두리 제거
+
+### About
+
+- 각 section에 max-width를 1200px로 넣어줌(너무 넓은 모니터에서 길어지면 보기 안좋음)
+
+### Skills
+
+- value 값이 각각 다르므로 HTML에 직접 style 속성을 넣어줌
+
+### Projects
+
+- category\_\_btn에 active 클래스가 더 해져있거나 마우스가 버튼위에 올려진 경우
+
+```
+.category__btn .active, // 바로 붙어 있는 것은 and
+.category__btn:hover { // , 로 연결되어 있는 것은 or
+  background-color: var(--color-logo);
+}
+```
+
+- CSS 가상요소[https://green-webdesigner.tistory.com/20]
+  - :after
+    - 가상 선택자는 꾸밈을 위해서 의미없는 태그를 더 추가해야 될때, 태그를 추가하는 대신 가상으로 처리해주는 기능
+    - 해당 태그의 다음위치에 놓여진다.(<->before는 해당태그의 앞에 놓여짐)
