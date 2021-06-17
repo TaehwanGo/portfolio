@@ -1,4 +1,4 @@
-# Portpolio
+# Portfolio
 
 - Vanilla Javascript, CSS, HTML5
 
@@ -261,3 +261,5 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 ```
 
 ## 6. CSS : Styling
+
+### Global set up & typography
