@@ -121,5 +121,82 @@
 - All, Front-end, Back-end 등의 버튼을 만들고 클릭하면 필터링 되어 해당 프로젝트 표시
 - 각 프로젝트에 깃허브 링크를 걸어 놓음
 - Blank : 새탭으로 띄우기(default는 현재탭에서 뜸)
-- 이미지 사이즈 조정(later) : 이미지가 크면 다운로드 받는데 오래걸리기 때문
+- 이미지 사이즈 조정 : 이미지가 크면 다운로드 받는데 오래걸리기 때문
   - png resize 또는 png compressor 검색
+
+### Testimonials
+
+- 나중에 추천서를 받게 된다면 추가 할 예정
+
+### Contact
+
+- email 과 github 링크를 넣음
+- 나중에 블로그를 만들면 추가할 예정
+
+## 5. CSS : Essential
+
+### Box model
+
+- content box : content의 크기를 유지하고 padding이나 margin 또는 border를 주면 전체 사이즈가 커짐
+- border box : 전체적인 크기는 고정되고 padding 등이 추가 되면 content의 사이즈가 작아짐
+
+### Absolute vs Static
+
+- position : static (default)
+- absolute : 근접한 부모중에 static이 아닌 부모의 기준에서 움직임(body까지 올라갈 수 있음)
+
+### Sticky vs Fixed
+
+- sticky를 쓰려면 top, left를 지정해야 됨
+- Fixed : 부모와는 상관없이 Viewport(화면)에 고정
+
+### Centering trick
+
+- flexbox가 아닐때
+  - margin : auto -> 수평만 적용되고 수직은 적용 안됨
+  - text-align : center -> block 레벨이 아닌 것들은 센터로 정렬 됨(수평만 적용 됨)
+  - transform : translate(50%, 50%);
+  - text의 경우 => text-align : center; line-height : (부모박스의 높이만큼);(한줄일 경우에만 가능)
+
+### Responsive background
+
+- background-image: url('https://...'); 반복됨
+- background-repeat: no-repeat; 반복 안됨
+- background-position: center;
+- background-size: cover;
+- background : center/cover no-repeat url(''); 으로 위에 것들을 한번에 가능
+
+### Transformation
+
+- transform : translateX(100px); 오른쪽으로 100px만큼 이동
+- transform : translate(100px, 100px) scale(2) rotate(45deg);
+  - 100, 100만큼 이동, 2배 키움, 45도 회전
+
+### Magic animation(transition)
+
+```
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+  }
+  .box: hover {
+    background-color: blue;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+  } // 아래 것으로 표현 가능
+  .box: hover {
+    background-color: blue;
+    transition: background-color 300ms linear;
+  }
+  .box1: hover { // 애니메이션이 2개 이상인 경우
+    border-radius: 50%;
+    background-color: blue;
+    transition: all 300ms ease; // 변하는게 2개 이상하면 all로 묶을 수 있음
+  }
+```
+
+## 6. CSS : Styling
+
+### CSS Variable
