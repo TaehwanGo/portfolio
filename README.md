@@ -197,6 +197,67 @@
   }
 ```
 
-## 6. CSS : Styling
-
 ### CSS Variable
+
+- 공통적으로 적용하는 margin 같은 것을 hardcoded 하지 말고 상수로 정의해서 사용할 것
+
+```
+// css에서 변수 정의는 어느 곳이든 가능
+:root {
+  // 제일 상위 노드에서 변수를 정의하고 사용
+  // 하위 노드에만 적용되기 때문에 최상위 노트에서 정의하면 모든 곳에서 사용 가능
+  --font-size: 32px;
+  --background-color: thistle;
+  --text-color: whitesmoke;
+  --base-space: 8px;
+}
+
+.first-list {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  // var() 함수를 사용해서 변수이름을 불러 올 수 있음
+  margin-top: var(--base-space, 8); // 만약 base-space가 없다면 기본값을 설정도 가능
+  margin-left: calc(var(--base-space) * 2);
+  // calc() 함수로 기본 값의 연산을 해서 적용 할 수 있음
+}
+
+@media screen and (max-width: 768px) { // 화면크기에 따라 여백 등을 달리하고 싶을 때
+  :root {
+    --font-size: 16px;
+    --base-space: 4px;
+  }
+}
+```
+
+### HTML 유용한 Data
+
+- HTML5에서 추가됨
+- HTML태그 자체에서 제공하는 속성들 뿐만 아니라 원하는 데이터를 DOM요소에 HTML요소에 추가 할 수 있게 함
+- 사용 : data-(원하는 이름)="(값)"
+
+```
+<div data-index="1" data-display-name="tony"></div>
+<div data-index="2" data-display-name="portfolio"></div>
+// css에서도 사용 가능
+
+<style>
+  [data-display-name="tony"] { // 모든 data-display-name="tony"가 포함된 곳에 적용
+    background-color: beige;
+  }
+  div[data-display-name="tony"] { // div중 data-display-name="tony"가 포함된 곳
+    background-color: beige;
+  }
+</style>
+
+<script>
+  const tony = document.querySelector('div') // div 태그 중 제일 첫번째로 나오는 것을 가져옴
+  const tony1 = document.querySelector('div[data-display-name="tony"]')
+  console.log(tony1.dataset); // data- 뒤에 추가된 이름(index 또는 display-name)만 출력이 됨 + display-name이 displayName으로 camel case화 됨
+  console.log(tony1.dataset.displayName); // tony가 출력
+</script>
+
+data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개가 되므로
+민감한 요소들은 추가하지 않는 것이 좋음(완전히 공개돼도 되는 것들만 사용할 것)
+```
+
+## 6. CSS : Styling
