@@ -267,3 +267,7 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 - CSS 변수 선언 및 텍스 태그 설정
 
 ### Nav
+
+- font, color, active class 설정
+
+### Home
