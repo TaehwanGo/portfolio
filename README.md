@@ -174,6 +174,8 @@
 
 ### Magic animation(transition)
 
+- 300ms가 재밌으면서 답답하지 않은 표준화된 수치
+
 ```
   .box {
     width: 100px;
