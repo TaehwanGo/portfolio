@@ -333,3 +333,17 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 
 - getBoundingClientRect() 사용해서 Nav bar의 높이를 구하고
 - Window.scrollY 를 이용해서 현재 스크롤 값을 구해서 비교
+- classList의 add와 remove를 이용해서 CSS의 navbar--dark를 스크롤에 따라 더하거나 제거
+
+### Scroll to section
+
+- Navbar와 Home의 버튼을 클릭하면 해당 section으로 이동
+- Section 별로 지정된 id로 이동
+- navbar의 HTML에 data-를 지정
+
+```
+<li class="navbar__menu__item" data-link="#home">Home</li>
+```
+
+- scroll to id
+  - element.scrollIntoView
