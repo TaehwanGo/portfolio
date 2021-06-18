@@ -95,10 +95,18 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-logo);
+  background-color: transparent;
   align-items: center;
   color: var(--color-black);
   padding: 16px;
+  position: fixed;
+  width: 100%;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-logo);
+  padding: 8px;
 }
 
 .navbar__menu {
@@ -140,6 +148,7 @@ p {
 #home {
   background: url('images/background.png') center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 

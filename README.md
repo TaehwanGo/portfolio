@@ -321,3 +321,15 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
     width: 100%; // 이 것과 같음
   }
 ```
+
+## 7. JavaScript: Fun dynamics
+
+- VS Code에서 Javascript에서 CSS 클래스 이름을 자동으로 완성 : zignd 익스텐션
+  - HTML-CSS-class-completion : Enable Emmet Support 체크
+
+### Transparent navbar
+
+- Nav bar를 투명하게 만들고 Nav bar 높이 만큼 스크롤이 내려오면 Nav bar에 배경색을 넣음
+
+- getBoundingClientRect() 사용해서 Nav bar의 높이를 구하고
+- Window.scrollY 를 이용해서 현재 스크롤 값을 구해서 비교
