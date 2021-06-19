@@ -380,3 +380,8 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
     e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
   target.classList.add('selected');
   ```
+
+### Navbar toggle button
+
+- Element.classList.toggle('open');
+  - if 'open' is set remove it, otherwise add it
