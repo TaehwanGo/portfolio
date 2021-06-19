@@ -361,3 +361,7 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 - display none으로 하면 완전히 없어졌다가 새로 생길 경우 animation을 줄 수 없음
   - opacity: 0; pointer-events: none; 로 없애고
   - opacity: 1; pointer-events: auto; 로 보이게 함
+
+### Project filtering
+
+- project html에 해당 project type을 data- 속성에 넣어서 구분
