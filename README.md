@@ -347,3 +347,10 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 
 - scroll to id
   - element.scrollIntoView(); // option으로 smooth하게 설정
+
+### Transparent home
+
+- 스크롤이 내려갈 수록 home이 점점 투명해지게 만들기
+- 0 ~ home최하단(610) => 1 ~ 0 으로 opacity 적용
+  - 610 <- const homeHeight = home.getBoundingClientRect().height;
+  - 1 - window.scrollY / homeHeight
