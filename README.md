@@ -354,3 +354,10 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 - 0 ~ home최하단(610) => 1 ~ 0 으로 opacity 적용
   - 610 <- const homeHeight = home.getBoundingClientRect().height;
   - 1 - window.scrollY / homeHeight
+
+### Arrow up button
+
+- 스크롤이 내려가면 맨위로 가는 버튼이 오른쪽 아래에 보이게
+- display none으로 하면 완전히 없어졌다가 새로 생길 경우 animation을 줄 수 없음
+  - opacity: 0; pointer-events: none; 로 없애고
+  - opacity: 1; pointer-events: auto; 로 보이게 함
