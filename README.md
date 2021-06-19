@@ -365,3 +365,18 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 ### Project filtering
 
 - project html에 해당 project type을 data- 속성에 넣어서 구분
+
+### Button state
+
+- 버튼을 클릭하면 하얀 테두리와 배경색이 바뀌는데
+  그냥 하게 되면 테두리(border)의 크기만큼 양옆의 글자가 움직이므로
+  평소에도 테두리를 주고 투명하게 만들음
+
+- 버튼 안의 자식 노드를 클릭해도 버튼에 selected 클래스를 붙여서 버튼이 눌렸다는 것을 강조하고 싶은 경우
+  ```javascript
+  const active = document.querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  const target =
+    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  target.classList.add('selected');
+  ```
