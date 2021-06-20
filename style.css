@@ -173,6 +173,10 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.home__contact:hover {
+  color: var(--color-white);
+}
+
 /* Section common */
 .section {
   padding: 50px;
@@ -292,6 +296,7 @@ etc {
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   padding: 8px 48px;
+  position: relative;
 }
 
 .category__btn.selected,
@@ -304,7 +309,7 @@ etc {
 .category__btn.active .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
-  top: 0;
+  top: 4px;
 }
 
 .category__count {
@@ -316,10 +321,10 @@ etc {
   line-height: 24px;
   color: var(--color-white);
   top: -20px;
-  left: 4px;
+  right: 16px;
   opacity: 0;
   transition: all var(--animation-duration) ease;
-  position: relative;
+  position: absolute;
 }
 
 .work__projects {
@@ -449,8 +454,19 @@ etc {
 
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
+  :root {
+    /* Font size */
+    --font-large: 30px;
+    --font-medium: 18px;
+    --font-regular: 16px;
+    --font-small: 14px;
+    --font-micro: 12px;
+  }
+
   .navbar__toggle-btn {
     display: block;
+    top: 16px;
+    right: 16px;
   }
 
   #navbar {
@@ -469,7 +485,7 @@ etc {
     width: 30%;
     /* display: none; */
     z-index: -1;
-    transform: translate(100%, 25%);
+    transform: translate(100%, 20%);
     position: absolute;
     top: 0;
     right: 0;
@@ -478,8 +494,13 @@ etc {
 
   .navbar__menu.open {
     /* display: block; */
-    transform: translate(0%, 25%);
+    transform: translate(0%, 20%);
     background-color: var(--color-logo);
+  }
+
+  .section {
+    padding: 16px;
+    padding-top: 40px;
   }
 
   .about__majors {
@@ -503,9 +524,19 @@ etc {
   .category__btn {
     flex-grow: 1;
     width: max-content;
+    padding: 8px 16px;
+  }
+
+  .category__count {
+    right: 2px;
   }
 
   .project {
     flex-grow: 1;
+  }
+
+  .arrow-up {
+    right: 16px;
+    bottom: 16px;
   }
 }

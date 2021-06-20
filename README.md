@@ -385,3 +385,10 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 
 - Element.classList.toggle('open');
   - if 'open' is set remove it, otherwise add it
+
+## 8. Last touch
+
+- mobile에선 padding을 16px 만 줘도 됨
+- mobile화면을 확인하려면 개발툴에 Toggle device toolbar로 점검
+- 모바일 화면 폰트 사이즈 작게 함
+  - media query안에서 root의 font 변수를 재 설정
