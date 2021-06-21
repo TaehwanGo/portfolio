@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .box {
+        width: 300px;
+        height: 300px;
+        margin: 80px auto;
+        background-color: plum;
+        transition: 2000ms;
+      }
+
+      .box.active {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+    <div class="box">11</div>
+    <div class="box">12</div>
+    <div class="box">13</div>
+    <div class="box">14</div>
+    <div class="box">15</div>
+    <div class="box">16</div>
+    <div class="box">17</div>
+    <div class="box">18</div>
+    <div class="box">19</div>
+    <div class="box">20</div>
+
+    <script>
+      const boxes = document.querySelectorAll('.box');
+      const options = {
+        root: null, // null: viewport(default)
+        rootMargin: '0px', // margin을 준만큼 더 넓은 범위의 root로 설정됨
+        threshold: 1, // 얼마 만큼 보여져야 콜백함수가 호출될지를 결정(0~1, 1이 전체), 나갈땐 반대로(1~0 이 됨)
+      };
+      const callback = (entries, observer) => {
+        // console.log(entries);
+        // console.log(observer);
+        entries.forEach(entry => {
+          // console.log(entry.target);
+          if (entry.isIntersecting) {
+            // 들어올 때
+            entry.target.classList.add('active');
+          } else {
+            // 나갈 때
+            entry.target.classList.remove('active');
+          }
+        });
+      };
+      const observer = new IntersectionObserver(callback, options);
+      boxes.forEach(box => observer.observe(box));
+    </script>
+  </body>
+</html>

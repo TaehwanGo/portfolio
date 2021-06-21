@@ -112,6 +112,7 @@ p {
 
 .navbar__menu {
   display: flex;
+  margin: 8px 0px;
 }
 
 .navbar__logo {
@@ -129,6 +130,7 @@ p {
   border-radius: var(--size-border-radius);
 }
 
+.navbar__menu__item.active,
 .navbar__menu__item:hover {
   color: var(--color-white);
   border-color: var(--color-white);
@@ -231,6 +233,21 @@ p {
 /* Skills */
 #skills {
   background-color: var(--color-yellow);
+}
+
+.skills__paragraph {
+  margin: auto;
+  width: max-content;
+  text-align: left;
+}
+
+.skills__paragraph__list {
+  display: flex;
+  justify-content: left;
+}
+
+.skills__paragraph__emoji {
+  margin-right: 5px;
 }
 
 .skillset {
@@ -490,12 +507,17 @@ etc {
     top: 0;
     right: 0;
     transition: all var(--animation-duration) ease-in-out;
+    border-radius: var(--size-border-radius);
   }
 
   .navbar__menu.open {
     /* display: block; */
     transform: translate(0%, 20%);
     background-color: var(--color-logo);
+  }
+
+  .navbar__menu__item:last-child {
+    margin-bottom: 5px;
   }
 
   .section {
@@ -509,6 +531,10 @@ etc {
 
   .major:first-child {
     margin-bottom: 40px;
+  }
+
+  .skills__paragraph {
+    width: 100%;
   }
 
   .skillset {

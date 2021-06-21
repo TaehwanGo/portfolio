@@ -386,9 +386,60 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 - Element.classList.toggle('open');
   - if 'open' is set remove it, otherwise add it
 
-## 8. Last touch
+### Last touch
 
 - mobile에선 padding을 16px 만 줘도 됨
 - mobile화면을 확인하려면 개발툴에 Toggle device toolbar로 점검
 - 모바일 화면 폰트 사이즈 작게 함
   - media query안에서 root의 font 변수를 재 설정
+
+## 8. 스크롤 시 메뉴 활성화 시키기
+
+- bootstrap을 이용하는 방법
+
+  - head에 bootstrap link 추가 후
+  - body에 data-spy="scroll" data-target=".navbar"
+
+- Javascript 코드 작성 전 테스트
+
+  - intersection_observer
+    - as
+  - intersection_observer_container
+
+- getBoundingClientRect()로 스크롤 이벤트 리스너에 붙여서 위치를 계산할 경우 성능이 저하됨
+- intersection_observer (WEB_API)
+  - 어떤 요소가 부모컨테이너 안에서 인터섹션(교차)을 감지
+  - 사용자에게 보여지는 부분만 두고 보여지지 않는 부분은 DOM에서 잠시 삭제했다가 보여지면 다시 DOM에 등록할 수도 있음
+  - 화면에 들어오거나 나갈때 콜백을 실행
+
+```javascript
+const observer = new IntersectionObserver(callback, option);
+// 우리가 원하는 요소가 특정한 영역에 들어왔을 때 알려주는(콜백함수를 호출) 해주는 관찰자
+```
+
+### 구현1 - 큰 골격
+
+- 스크롤 할 때 해당 섹션의 메뉴 버튼 활성화(색바뀜)
+- 윈도우가 작아지거나 모바일 모드에서도 동일하게 활성화
+- 성능에 문제가 없도록 해야 함
+
+- document.querySelector(\`[ ]\`) 로 \`[ ]\`안에 속성값과 일치하는 element를 불러올 수 있음
+
+```javascript
+const navItems = sectionIds.map(id =>
+  document.querySelector(`[data-link="${id}"]`),
+);
+```
+
+### 구현2 - 로직
+
+- 문제점 : 현재 보여지고 있는 섹션은 나가거나 들어오지 않아서 메뉴 활성화가 안되고 있음
+- 해결 : section에서 나갈때 다음 섹션을 활성화
+
+  - 위로 빠지면 그 다음 섹션을 선택
+  - 아래로 빠지면 그 다음 섹션을 선택
+
+- scroll event vs wheel event : wheel은 사용자가 스크롤 하는 경우
+
+- Button click(home의 contact, 화면의 arrow-up)
+  - click event에 위에서 만든 selectNavItem function 추가
