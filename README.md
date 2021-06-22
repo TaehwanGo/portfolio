@@ -4,7 +4,7 @@
 
 ### Contents
 
-1. Planning, Designing
+1. [Planning, Designing](#1.-planning,-designing)
 2. Git, Github
 3. Head
 4. HTML + BEM
@@ -13,8 +13,9 @@
 7. JavaScript + Problem solving skill
 8. Publish
 
-## 1. Planning, Designing - 기획, 디자인 구상
+## 1. Planning, Designing
 
+- 기획, 디자인 구상
 - Wire framing
   - 스케치북 등에 Visualizing 하는 것
 
@@ -443,3 +444,14 @@ const navItems = sectionIds.map(id =>
 
 - Button click(home의 contact, 화면의 arrow-up)
   - click event에 위에서 만든 selectNavItem function 추가
+
+## 9. Publish
+
+- [github](https://taehwango.github.io/portfolio/)
+- [google domain](https://www.taehwango.info)
+  - github page에 custom domain 저장 후
+  - custom domain > learn more > managing a custom domain > IP addresses for GitHub Pages(ex. 185.199.108.153)를 google domain에 연결 해야 함
+  - google domain > DNS > github에서 제공하는 것 모두(4가지)를 Custom resource records에 등록
+  - google domain CNAME에 taehwango.github.io. 를 등록했는데
+  - 몇 시간 지나도 안되면 taehwango.github.io/portfolio.로 바꿔볼 예정
+    - 현재 안되는 중
