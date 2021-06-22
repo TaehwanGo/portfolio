@@ -348,7 +348,7 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 <li class="navbar__menu__item" data-link="#home">Home</li>
 ```
 
-- scroll to id
+- scroll to element(querySelector로 id에 해당하는 element를 가져와서 그 곳 으로 이동)
   - element.scrollIntoView(); // option으로 smooth하게 설정
 
 ### Transparent home
@@ -405,9 +405,7 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 
 - Javascript 코드 작성 전 테스트
 
-  - intersection_observer
-    - as
-  - intersection_observer_container
+  - Intersection Observer(WEB API) 이용
 
 - getBoundingClientRect()로 스크롤 이벤트 리스너에 붙여서 위치를 계산할 경우 성능이 저하됨
 - intersection_observer (WEB_API)

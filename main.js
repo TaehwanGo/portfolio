@@ -119,12 +119,14 @@ let selectedNavIndex = 0;
 let selectedNavItem = navItems[0];
 
 function selectNavItem(selected) {
+  // 현재 화면에 해당하는 menu를 active
   selectedNavItem.classList.remove('active');
   selectedNavItem = selected;
   selectedNavItem.classList.add('active');
 }
 
 function scrollIntoView(selector) {
+  // selector : id (ex. #home, #about, ...)
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
   selectNavItem(navItems[sectionIds.indexOf(selector)]);
