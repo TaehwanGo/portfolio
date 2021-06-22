@@ -448,7 +448,7 @@ const navItems = sectionIds.map(id =>
 ## 9. Publish
 
 - [github](https://taehwango.github.io/portfolio/)
-- [google domain](https://www.taehwango.info)
+- [google domain](http://www.taehwango.info)
   - github page에 custom domain 저장 후
   - custom domain > learn more > managing a custom domain > IP addresses for GitHub Pages(ex. 185.199.108.153)를 google domain에 연결 해야 함
   - google domain > DNS > github에서 제공하는 것 모두(4가지)를 Custom resource records에 등록
