@@ -467,3 +467,6 @@ const navItems = sectionIds.map(id =>
   hint: See the 'Note about fast-forwards' in 'git push --help' for details.
   - fetch를 안해서 발생된 문제 같다.
   - git push origin +master 로 임시 해결
+  - git pull origin master : 원격 저장소에 새로운 커밋이 있다면 그걸 내 로컬 저장소에 받아오는 것
+    - CNAME이 업데이트됨
+    - 이후 git push origin master 진행 됨
