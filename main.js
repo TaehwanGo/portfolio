@@ -38,6 +38,12 @@ contactBtn.addEventListener('click', event => {
   scrollIntoView('#contact');
 });
 
+// Handle click on "logo" button on navbar
+const navbarLogo = document.querySelector('.navbar__logo');
+navbarLogo.addEventListener('click', event => {
+  scrollIntoView('#home');
+});
+
 // Make home slowly fade to transparent as the window scrolls down
 const home = document.querySelector('.home__container');
 const homeHeight = home.getBoundingClientRect().height;

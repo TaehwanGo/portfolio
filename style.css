@@ -119,6 +119,11 @@ p {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
   color: var(--color-blue);
+  cursor: pointer;
+}
+
+.navbar__logo span {
+  color: var(--color-white);
 }
 
 .navbar__menu__item {
