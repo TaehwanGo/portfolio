@@ -4,14 +4,16 @@
 
 ### Contents
 
-1. [Planning, Designing](#1-planning,-designing)
-2. Git, Github
-3. Head
-4. HTML + BEM
-5. CSS
-6. STYLING
-7. JavaScript + Problem solving skill
-8. Publish
+1. [Planning, Designing](#1-planning-designing)
+2. [Git, Github](#2-git-and-github)
+3. [Head](#3-head)
+4. [HTML + BEM](#4-html--markup)
+5. [CSS](#5-css--essential)
+6. [STYLING](#6-css--styling)
+7. [JavaScript + Problem solving skill](#7-javascript-fun-dynamics)
+8. [스크롤 시 메뉴 활성화](#8-스크롤-시-메뉴-활성화-시키기)
+9. [Publish](#9-publish)
+10. [기타 문제점](#10-기타-문제점)
 
 ## 1. Planning, Designing
 
@@ -177,7 +179,7 @@
 
 - 300ms가 재밌으면서 답답하지 않은 표준화된 수치
 
-```
+```CSS
   .box {
     width: 100px;
     height: 100px;
@@ -204,7 +206,7 @@
 
 - 공통적으로 적용하는 margin 같은 것을 hardcoded 하지 말고 상수로 정의해서 사용할 것
 
-```
+```CSS
 // css에서 변수 정의는 어느 곳이든 가능
 :root {
   // 제일 상위 노드에서 변수를 정의하고 사용
@@ -238,7 +240,7 @@
 - HTML태그 자체에서 제공하는 속성들 뿐만 아니라 원하는 데이터를 DOM요소에 HTML요소에 추가 할 수 있게 함
 - 사용 : data-(원하는 이름)="(값)"
 
-```
+```HTML
 <div data-index="1" data-display-name="tony"></div>
 <div data-index="2" data-display-name="portfolio"></div>
 // css에서도 사용 가능
@@ -290,7 +292,7 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 
 - category\_\_btn에 active 클래스가 더 해져있거나 마우스가 버튼위에 올려진 경우
 
-```
+```CSS
 .category__btn .active, // 바로 붙어 있는 것은 and
 .category__btn:hover { // , 로 연결되어 있는 것은 or
   background-color: var(--color-logo);
@@ -314,7 +316,7 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
   - item 클래스에서 사용(부모 박스에서 사용하는거 아님)
   - width: 100%에 비해 장점은 화면이 중간정도 일때 아이템들이 여러개가 배치 될 수 있음
 
-```
+```CSS
 .project {
     flex-grow: 1; // 한줄에 하나 일때 그 아이템에 이렇게 작성하면
 }
@@ -342,7 +344,7 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 - Section 별로 지정된 id로 이동
 - navbar의 HTML에 data-를 지정
 
-```
+```HTML
 <li class="navbar__menu__item" data-link="#home">Home</li>
 ```
 
