@@ -454,3 +454,16 @@ const navItems = sectionIds.map(id =>
   - google domain > DNS > github에서 제공하는 것 모두(4가지)를 Custom resource records에 등록
   - google domain CNAME에 taehwango.github.io. 등록
   - 완료
+
+## 10. 기타 문제점
+
+- $ git push origin master
+  To https://github.com/TaehwanGo/portfolio.git
+  ! [rejected] master -> master (non-fast-forward)
+  error: failed to push some refs to 'https://github.com/TaehwanGo/portfolio.git'
+  hint: Updates were rejected because the tip of your current branch is behind
+  hint: its remote counterpart. Integrate the remote changes (e.g.
+  hint: 'git pull ...') before pushing again.
+  hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+  - fetch를 안해서 발생된 문제 같다.
+  - git push origin +master 로 임시 해결
