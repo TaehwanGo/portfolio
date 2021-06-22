@@ -4,7 +4,7 @@
 
 ### Contents
 
-1. [Planning, Designing](#1.-planning,-designing)
+1. [Planning, Designing](#1-planning,-designing)
 2. Git, Github
 3. Head
 4. HTML + BEM
