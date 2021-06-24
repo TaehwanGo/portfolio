@@ -474,3 +474,8 @@ const navItems = sectionIds.map(id =>
 
 - logo click 시 활성화 메뉴 적용 안되는 문제
   - a태그 없애고 logo의 click event에 scrollIntoView 함수 적용
+
+### SEO
+
+- 참고 : [구글 SEO 최적화 가이드](https://www.hedleyonline.com/ko/blog/google-seo-search-engine-optimization-guide-2020/)
+- https://www.xml-sitemaps.com/ 에서 검색 후 다운로드 받은 파일 root dir에 업로드
