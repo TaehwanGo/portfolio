@@ -478,4 +478,8 @@ const navItems = sectionIds.map(id =>
 ### SEO
 
 - 참고 : [구글 SEO 최적화 가이드](https://www.hedleyonline.com/ko/blog/google-seo-search-engine-optimization-guide-2020/)
-- https://www.xml-sitemaps.com/ 에서 검색 후 다운로드 받은 파일 root dir에 업로드
+- 사이트맵 생성 및 업로드 : https://www.xml-sitemaps.com/ 에서 검색 후 다운로드 받은 파일 root dir에 업로드
+- 사이트맵 제출 : 구글 서치콘솔(GSC)에 생성된 사이트맵을 제출
+- robots.txt : 검색엔진에게 나의 홈페이지 특정페이지는 검색창에 표시를 하고 특정페이지는 표시를 하지 말라고 신호를 보내는 역할을 하는 텍스트 파일
+  - 페이지가 하나이므로 따로 추가하지 않음
+- title, meta description 수정
