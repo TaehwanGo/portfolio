@@ -483,3 +483,9 @@ const navItems = sectionIds.map(id =>
 - robots.txt : 검색엔진에게 나의 홈페이지 특정페이지는 검색창에 표시를 하고 특정페이지는 표시를 하지 말라고 신호를 보내는 역할을 하는 텍스트 파일
   - 페이지가 하나이므로 따로 추가하지 않음
 - title, meta description 수정
+- site: taehwango.info 로 검색하면 검색 됨
+- 그 외 키워드로는 아직 검색 안됨
+
+- 위 방법으로 안될 경우
+  - https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=ko
+  - 주소로 검색이 돼서 진행하지 않음
