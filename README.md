@@ -13,7 +13,7 @@
 7. [JavaScript + Problem solving skill](#7-javascript-fun-dynamics)
 8. [스크롤 시 메뉴 활성화](#8-스크롤-시-메뉴-활성화-시키기)
 9. [Publish](#9-publish)
-10. [기타 문제점](#10-기타-문제점)
+10. [Etc](#10-Etc)
 
 ## 1. Planning, Designing
 
@@ -455,7 +455,7 @@ const navItems = sectionIds.map(id =>
   - google domain CNAME에 taehwango.github.io. 등록
   - 완료
 
-## 10. 기타
+## 10. Etc
 
 - $ git push origin master
   To https://github.com/TaehwanGo/portfolio.git
