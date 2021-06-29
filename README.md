@@ -455,7 +455,7 @@ const navItems = sectionIds.map(id =>
   - google domain CNAME에 taehwango.github.io. 등록
   - 완료
 
-## 10. 기타 문제점
+## 10. 기타
 
 - $ git push origin master
   To https://github.com/TaehwanGo/portfolio.git
@@ -489,3 +489,9 @@ const navItems = sectionIds.map(id =>
 - 위 방법으로 안될 경우
   - https://developers.google.com/search/docs/beginner/seo-starter-guide?hl=ko
   - 주소로 검색이 돼서 진행하지 않음
+
+### [Google analytics 적용](https://support.google.com/analytics/answer/1008015?hl=ko)
+
+- github pages에서 기본적으로 방문자 통계를 제공하지 않으므로 analytics를 적용함
+  - Google domain으로도 노출이나 클릭수는 확인가능 하지만 디테일이 부족함
+- 장점 : 무료, UI 좋음, 무료임에도 기능이 좋음
