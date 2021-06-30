@@ -477,6 +477,10 @@ const navItems = sectionIds.map(id =>
 
 ### SEO
 
+![SEO](images/seo.PNG)
+
+- 검색해서 최상단에 뜨는 것 확인
+
 - 참고 : [구글 SEO 최적화 가이드](https://www.hedleyonline.com/ko/blog/google-seo-search-engine-optimization-guide-2020/)
 - 사이트맵 생성 및 업로드 : https://www.xml-sitemaps.com/ 에서 검색 후 다운로드 받은 파일 root dir에 업로드
 - 사이트맵 제출 : 구글 서치콘솔(GSC)에 생성된 사이트맵을 제출
