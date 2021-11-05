@@ -63,9 +63,9 @@
     <section id="home">
       <div class="home__container">
         <div class="home__avatar"></div>
-        <h1 class="home__title">Hello, <br />I'm dev Tony</h1>
+        <h1 class="home__title">Hello, <br />I'm a book person.</h1>
         <h2 class="home__description">
-          백엔드와 프론트엔드를 넘나드는 프론트엔드 개발자
+          안녕하세요! 소프트웨어 개발자 고태환입니다.
         </h2>
         <button class="home__contact">Contact me</button>
       </div>
@@ -74,11 +74,8 @@
     <section id="about" class="section section__container">
       <h1>About me</h1>
       <p>
-        웹 개발에 관심이 생겨서 Javascript, Typescript를 위주로 공부를 하는
-        개발자입니다. <br />Nomad Coder의 강의를 들고 챌린지를 수행하며
-        공부했습니다. <br />Vanilla JS, Node Js, React Js, Nest JS를 사용해봤고
-        <br />
-        React를 중심으로 Javascript 생태계를 확장하고 있습니다.
+        사용자 경험이 좋은 서비스를 만드는 것에 관심이 많습니다.<br />
+        독서와 토론을 통해 학습하고 메타인지를 높이는 것을 좋아합니다.
       </p>
       <div class="about__majors">
         <div class="major">
@@ -88,7 +85,7 @@
           <h2 class="major__title">Front-end</h2>
           <div class="major__description">
             HTML, CSS, Javascript,
-            <br />Typescript, React
+            <br />Typescript, React, Next.js <br />Redux
           </div>
         </div>
         <div class="major">
@@ -96,7 +93,7 @@
             <i class="fas fa-server"></i>
           </div>
           <h2 class="major__title">Back-end</h2>
-          <div class="major__description">NodeJS, NestJS</div>
+          <div class="major__description">NodeJS, Express, NestJS</div>
         </div>
       </div>
     </section>
@@ -121,10 +118,10 @@
             <div class="skill">
               <div class="skill__description">
                 <span>HTML</span>
-                <span>99%</span>
+                <span>95%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 99%"></div>
+                <div class="skill__value" style="width: 95%"></div>
               </div>
             </div>
             <div class="skill">
@@ -139,6 +136,15 @@
             <div class="skill">
               <div class="skill__description">
                 <span>Javascript</span>
+                <span>90%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>Typescript</span>
                 <span>80%</span>
               </div>
               <div class="skill__bar">
@@ -147,20 +153,11 @@
             </div>
             <div class="skill">
               <div class="skill__description">
-                <span>Typescript</span>
-                <span>70%</span>
-              </div>
-              <div class="skill__bar">
-                <div class="skill__value" style="width: 70%"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill__description">
                 <span>React</span>
-                <span>70%</span>
+                <span>85%</span>
               </div>
               <div class="skill__bar">
-                <div class="skill__value" style="width: 70%"></div>
+                <div class="skill__value" style="width: 85%"></div>
               </div>
             </div>
             <div class="skill">
@@ -196,16 +193,53 @@
       <h1>Projects</h1>
       <div class="work__categories">
         <button class="category__btn selected" data-filter="*">
-          All <span class="category__count">4</span>
+          All <span class="category__count">5</span>
         </button>
         <button class="category__btn" data-filter="front-end">
-          Front-end <span class="category__count">4</span>
+          Front-end <span class="category__count">5</span>
         </button>
         <button class="category__btn" data-filter="back-end">
           Back-end <span class="category__count">2</span>
         </button>
       </div>
       <div class="work__projects">
+        <a
+          href="https://github.com/Ark-inflearn/inflearn-clone-front"
+          class="project"
+          target="blank"
+          data-type="front-end"
+        >
+          <!-- <img
+            src="images/projects/YouTubeLogo.png"
+            alt="Inflearn"
+            class="project__img"
+          /> -->
+          <svg
+            class="project__img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 433 90"
+          >
+            <path
+              fill="#1dc078"
+              d="M79.1 31.6c-2-4.6-4.7-8.7-8.1-12.2-3.5-3.5-7.5-6.3-12.1-8.3S49.3 8 43.9 8c-5.2 0-10.2.9-14.9 2.9s-8.8 4.7-12.4 8.1c-3.6 3.5-6.4 7.5-8.4 12.1A37.14 37.14 0 0 0 5.1 46c0 5.2.9 10.2 2.9 14.9s4.7 8.8 8.2 12.4 7.6 6.4 12.2 8.4c4.7 2 9.6 3.1 14.9 3.1l38.3.3.3-38.5c.1-5.3-.9-10.3-2.8-15zM74 77.4l-30.7-.3c-4.2 0-8.2-.9-11.9-2.5s-7-3.9-9.8-6.7A32.99 32.99 0 0 1 15 58c-1.6-3.8-2.3-7.7-2.3-11.9 0-4.3.9-8.3 2.5-12s3.9-6.9 6.7-9.7c2.9-2.8 6.2-4.9 9.9-6.5 3.8-1.6 7.7-2.3 11.9-2.3 4.3 0 8.3.9 12 2.5s6.9 3.8 9.7 6.7c2.8 2.8 4.9 6.1 6.5 9.8s2.3 7.7 2.3 12L74 77.4z"
+            />
+            <path
+              fill="#1dc078"
+              d="M76.9 83.7c-.9 0-1.8-.3-2.5-1L27.6 35.1c-1.4-1.4-1.3-3.6 0-4.9 1.4-1.4 3.6-1.3 4.9 0l46.8 47.6c1.4 1.4 1.3 3.6 0 4.9-.6.7-1.5 1-2.4 1z"
+            />
+            <path
+              fill="#1dc078"
+              d="M43.1 47.3c-.4 0-.8-.1-1.2-.2-1.8-.7-2.8-2.7-2.1-4.5l6.3-17.3c.7-1.8 2.7-2.8 4.5-2.1s2.8 2.7 2.1 4.5L46.4 45c-.5 1.4-1.9 2.3-3.3 2.3zm12.2 16.2H33.5C31.6 63.5 30 62 30 60c0-1.9 1.6-3.5 3.5-3.5h21.8c1.9 0 3.5 1.6 3.5 3.5 0 2-1.5 3.5-3.5 3.5zm44.1-32.4V85H88.8V31.1h10.6zm5.6 16.5c1.4-3.2 3.3-6.1 5.8-8.5 2.4-2.4 5.3-4.4 8.6-5.8s6.8-2.1 10.4-2.1c3.8 0 7.3.7 10.5 2.1s6.1 3.3 8.6 5.8c2.5 2.4 4.4 5.3 5.8 8.5s2.1 6.7 2.1 10.5v27h-10.7v-27c0-2.2-.4-4.3-1.3-6.3-.8-2-2-3.7-3.5-5.2s-3.2-2.6-5.2-3.5c-2-.8-4.1-1.3-6.4-1.3-2.2 0-4.3.4-6.3 1.3-2 .8-3.7 2-5.2 3.5s-2.6 3.2-3.5 5.2c-.8 2-1.3 4.1-1.3 6.3v27h-10.7v-27c.2-3.7.9-7.2 2.3-10.5zm76.1-26.2c-2 .8-3.7 2-5.2 3.5s-2.6 3.2-3.5 5.2c-.8 2-1.3 4.1-1.3 6.3v5.5h21.6v10.7h-21.6V85h-10.7V36.4c0-3.8.7-7.3 2.1-10.5s3.3-6.1 5.8-8.5 5.4-4.4 8.6-5.8c3.3-1.4 6.8-2.1 10.4-2.1h5.3v10.7h-5.3c-2.1 0-4.2.4-6.2 1.2zm43.2-11.9V85h-10.7V9.5h10.7zM270.5 66l7.6 7.6-3.7 3.7c-2.6 2.6-5.5 4.5-8.8 5.9s-6.7 2-10.3 2-7-.7-10.3-2c-3.3-1.4-6.2-3.3-8.8-5.9s-4.6-5.6-5.9-8.9-1.9-6.7-1.9-10.1.6-6.8 1.9-10.1 3.2-6.2 5.9-8.9c2.6-2.6 5.6-4.6 8.9-5.9s6.7-2 10.1-2 6.8.7 10.1 2 6.3 3.3 8.9 5.9l3.7 3.7L248 72.9c3 1.5 6.3 2 9.7 1.5s6.4-2.1 8.9-4.6l3.9-3.8zm-26.8-19.3c-3.2 3.2-4.8 7-4.8 11.5 0 2.5.6 4.8 1.7 7.1l10.6-10.6 6.4-6.3 4.7-4.7c-3-1.5-6.3-2-9.7-1.6-3.3.5-6.3 2.1-8.9 4.6zm64.8-15.6c3.8 0 7.3.7 10.5 2.1s6.1 3.3 8.5 5.8a27.88 27.88 0 0 1 5.8 8.5c1.4 3.2 2.1 6.7 2.1 10.5v27h-26.9c-3.7 0-7.2-.7-10.4-2.1-3.3-1.4-6.2-3.3-8.6-5.8-2.5-2.5-4.4-5.4-5.8-8.6-1.4-3.3-2.1-6.8-2.1-10.4 0-3.8.7-7.3 2.1-10.5s3.3-6.1 5.8-8.5 5.4-4.4 8.6-5.8c3.3-1.5 6.8-2.2 10.4-2.2zm16.2 43.2V58c0-2.2-.4-4.3-1.3-6.3-.8-2-2-3.7-3.5-5.2s-3.2-2.6-5.2-3.5c-2-.8-4.1-1.3-6.3-1.3s-4.4.4-6.4 1.3c-2 .8-3.7 2-5.2 3.5s-2.6 3.2-3.5 5.2c-.8 2-1.3 4.1-1.3 6.3s.4 4.4 1.3 6.4c.8 2 2 3.7 3.5 5.2s3.2 2.6 5.2 3.5c2 .8 4.1 1.3 6.4 1.3h16.3zm46.2-43.2v10.7h-5.4c-2.2 0-4.3.4-6.3 1.3-2 .8-3.7 2-5.2 3.5s-2.6 3.2-3.5 5.2c-.8 2-1.3 4.1-1.3 6.3v27h-10.8V58c0-3.8.7-7.3 2.1-10.5s3.3-6.1 5.8-8.5 5.4-4.4 8.6-5.8c3.3-1.4 6.8-2.1 10.4-2.1h5.6zm5.3 16.5c1.4-3.2 3.3-6.1 5.8-8.5 2.4-2.4 5.3-4.4 8.6-5.8s6.8-2.1 10.4-2.1c3.8 0 7.3.7 10.5 2.1s6.1 3.3 8.6 5.8c2.5 2.4 4.4 5.3 5.8 8.5s2.1 6.7 2.1 10.5v27h-10.7v-27c0-2.2-.4-4.3-1.3-6.3-.8-2-2-3.7-3.5-5.2s-3.2-2.6-5.2-3.5c-2-.8-4.1-1.3-6.4-1.3-2.2 0-4.3.4-6.3 1.3-2 .8-3.7 2-5.2 3.5s-2.6 3.2-3.5 5.2c-.8 2-1.3 4.1-1.3 6.3v27h-10.7v-27c.2-3.7.9-7.2 2.3-10.5z"
+            />
+            <title>인프런 브랜드 로고</title>
+          </svg>
+          <div class="project__description">
+            <h3>Inflearn</h3>
+            <span class="project__description__detail"
+              >인프런 웹앱을 만들어보는 팀프로젝트</span
+            >
+          </div>
+        </a>
         <a
           href="https://github.com/TaehwanGo/wetubeStudy"
           class="project"
@@ -219,7 +253,9 @@
           />
           <div class="project__description">
             <h3>Youtube clone</h3>
-            <span>Clone coding with Vanilla JS</span>
+            <span class="project__description__detail"
+              >Clone coding with Vanilla JS</span
+            >
           </div>
         </a>
         <a
@@ -235,7 +271,9 @@
           />
           <div class="project__description">
             <h3>Browser101</h3>
-            <span>Learning browser and Javascript</span>
+            <span class="project__description__detail"
+              >Learning browser and Javascript</span
+            >
           </div>
         </a>
         <a
@@ -251,7 +289,9 @@
           />
           <div class="project__description">
             <h3>React Movie app</h3>
-            <span>Movie app with ReactJS</span>
+            <span class="project__description__detail"
+              >Movie app with ReactJS</span
+            >
           </div>
         </a>
         <a
@@ -267,7 +307,7 @@
           />
           <div class="project__description">
             <h3>Uber Eats clone</h3>
-            <span
+            <span class="project__description__detail"
               >Studying NestJS, A Backend frame work, with Typescript, React,
               Apollo and GraphQL</span
             >
@@ -281,10 +321,10 @@
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="contact__email">gth1123@naver.com</h2>
       <div class="contact__links">
-        <a href="https://github.com/TaehwanGo">
+        <a href="https://github.com/TaehwanGo" title="Github">
           <i class="fab fa-github-square"></i>
         </a>
-        <a href="https://velog.io/@gth1123">
+        <a href="https://velog.io/@gth1123" title="Tech blog">
           <i class="fas fa-pen-square"></i>
         </a>
       </div>

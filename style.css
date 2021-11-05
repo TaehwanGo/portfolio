@@ -398,6 +398,7 @@ etc {
   justify-content: center;
   transform: translateY(10px);
   transition: all var(--animation-duration) ease-in;
+  padding: 0.5rem;
 }
 
 .project:hover .project__description {
@@ -423,6 +424,10 @@ etc {
   margin-top: 8px;
 }
 
+.project__description__detail {
+  word-break: keep-all;
+}
+
 /* Contact */
 #contact {
   background-color: var(--color-logo);
@@ -435,6 +440,10 @@ etc {
 
 .contact__title {
   margin: 32px 0;
+}
+
+.contact__email {
+  user-select: all;
 }
 
 .contact__links {

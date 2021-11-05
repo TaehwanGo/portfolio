@@ -499,3 +499,14 @@ const navItems = sectionIds.map(id =>
 - github pages에서 기본적으로 방문자 통계를 제공하지 않으므로 analytics를 적용함
   - Google domain으로도 노출이나 클릭수는 확인가능 하지만 디테일이 부족함
 - 장점 : 무료, UI 좋음, 무료임에도 기능이 좋음
+
+<details>
+<summary>after TVCF</summary>
+
+### 수정
+
+- skills 퍼센트 조정
+- 소개 문구 수정
+- 프로젝트에 Ark 관련 프로젝트 추가
+
+</details>
