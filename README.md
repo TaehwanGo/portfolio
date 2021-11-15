@@ -14,6 +14,7 @@
 8. [스크롤 시 메뉴 활성화](#8-스크롤-시-메뉴-활성화-시키기)
 9. [Publish](#9-publish)
 10. [Etc](#10-Etc)
+11. [SEO](#11-SEO)
 
 ## 1. Planning, Designing
 
@@ -475,7 +476,7 @@ const navItems = sectionIds.map(id =>
 - logo click 시 활성화 메뉴 적용 안되는 문제
   - a태그 없애고 logo의 click event에 scrollIntoView 함수 적용
 
-### SEO
+### 11. SEO
 
 ![SEO](images/seo.PNG)
 
