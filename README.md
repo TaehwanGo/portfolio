@@ -1,5 +1,6 @@
 # Portfolio
 
+- [https://www.taehwango.info/](https://www.taehwango.info/)
 - Vanilla Javascript, CSS, HTML5
 
 ### Contents
@@ -378,11 +379,11 @@ data-로 HTML에 추가한 data들은 사용자가 다운받아져서 다 공개
 
 - 버튼 안의 자식 노드를 클릭해도 버튼에 selected 클래스를 붙여서 버튼이 눌렸다는 것을 강조하고 싶은 경우
   ```javascript
-  const active = document.querySelector('.category__btn.selected');
-  active.classList.remove('selected');
+  const active = document.querySelector(".category__btn.selected");
+  active.classList.remove("selected");
   const target =
-    e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
-  target.classList.add('selected');
+    e.target.nodeName === "BUTTON" ? e.target : e.target.parentNode;
+  target.classList.add("selected");
   ```
 
 ### Navbar toggle button
@@ -428,8 +429,8 @@ const observer = new IntersectionObserver(callback, option);
 - document.querySelector(\`[ ]\`) 로 \`[ ]\`안에 속성값과 일치하는 element를 불러올 수 있음
 
 ```javascript
-const navItems = sectionIds.map(id =>
-  document.querySelector(`[data-link="${id}"]`),
+const navItems = sectionIds.map((id) =>
+  document.querySelector(`[data-link="${id}"]`)
 );
 ```
 
